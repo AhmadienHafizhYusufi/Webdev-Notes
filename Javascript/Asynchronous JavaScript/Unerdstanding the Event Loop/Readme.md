@@ -5,7 +5,7 @@ This environment consists of several key components:
 - **JavaScript Engine**: This is the core component that executes JavaScript
   code.
 - **Web APIs**: These are provided by the browser and include features like
-  `setIimeout`, `DOM manipulation`, and `fetch`. They allow JavaScript to
+  `setTimeout`, `DOM manipulation`, and `fetch`. They allow JavaScript to
   interact with the browser environment.
 - **Job/Callback Queue**: This is where asynchronous callbacks are queued up to
   be executed once the call stack is clear.
