@@ -1,3 +1,9 @@
+# Shallow Cloning
+
+**In this lesson, you'll learn about** cloning arrays and objects in JavaScript,
+which is essential for **creating independent copies** of data structures
+without maintaining **references** to the original.
+
 ## Cloning Arrays
 
 When you want to create a **copy** of an array **without keeping a reference**
@@ -96,3 +102,16 @@ const A2 = Object.assign({}, A1);
 
 console.log(A2); // { a: "2" }
 ```
+
+## Conclusion
+
+We've learned **two different ways** to clone both **objects** and **arrays**:
+using the **spread operator**`...` and using `Array.slice()` or
+`Object.assign()`.
+
+These methods create **shallow clones** meaning they copy the **top-level**
+properties but not **nested** objects.
+
+In the next lesson, we'll explore the **difference** between **shallow** and
+**deep** clones and how to create a **deep clone**. Understanding these concepts
+is crucial for managing data effectively in JavaScript.

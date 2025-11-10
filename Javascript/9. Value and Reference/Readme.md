@@ -1,11 +1,20 @@
-## Value vs Reference
+# Value vs Reference Introduction
+
+**In this lesson, you'll learn about** the difference between **value** and
+**reference** in JavaScript, which is crucial for understanding how data is
+stored and manipulated in your programs.
+
+## Value vs Reference Introduction
 
 JavaScript differentiates data types into **two categories**:
 
 - **Primitive values**: Number, String, Boolean, Null, Undefined, etc.
 - **Complex values**: Objects, Arrays
 
-### Copying Primitive Values
+Understanding how these types are **copied** and **manipulated** is key to
+avoiding unexpected behavior in your code.
+
+## Copying Primitive Values
 
 When copying **primitive values**, JavaScript behaves as you might expect. The
 value is copied directly, and changes to one variable do not affect the other.
@@ -37,7 +46,7 @@ console.log(secondPerson); // Mark
 In both cases, the original value is **copied**, and changes to the original
 variable **do not affect** the copied variable.
 
-### Copying Complex Values
+## Copying Complex Values
 
 When copying **complex values**, such as **objects** and **arrays**, JavaScript
 behaves differently. Instead of copying the value, it copies a **reference** to
@@ -74,3 +83,11 @@ console.log(otherPerson); // { firstName: 'JOHNNY', lastName: 'Snow' }
 In both examples, changes to the original array or object **also affect** the
 copied variable. This is because both variables **reference the same**
 underlying data.
+
+## Conclusion
+
+This behavior can be surprising if you're not expecting it, but it makes sense
+once you understand that **complex values are stored as references**. In the
+next lesson, we'll dive deeper into why this happens and how you can manage it
+effectively in your code. Understanding the **difference between value and
+reference** is essential for writing robust and predictable JavaScript programs.
