@@ -1,16 +1,22 @@
+# Working with Classes
+
+**In this lesson, you'll learn about** working with classes in JavaScript, which
+are not only used for styling elements but also for **manipulating** them
+**dynamically**.
+
 ## Working with Classes
 
 While classes are often associated with styling elements using CSS, they can
 also be leveraged in JavaScript to perform **actions** on **elements** with
-specific classes. This allows for **dynamic interactions** and **modifications**
-on a web page.
+**specific classes**. This allows for **dynamic interactions** and
+**modifications** on a web page.
 
-### Using Classes for Styling
+## Using Classes for Styling
 
 Classes are commonly used to **apply styles to elements**. Multiple class names
 can be assigned to an HTML element, separated by spaces.
 
-```htm
+```html
 <head>
   <style>
     .menu-item {
@@ -33,14 +39,16 @@ can be assigned to an HTML element, separated by spaces.
 </body>
 ```
 
-### Manipulating Classes with JavaScript
+## Manipulating Classes with JavaScript
 
 To **interact** with **elements** based on their classes, you can use
 JavaScript.
 
-**Example: Adding and Removing Classes**
+### Example: Adding and Removing Classes
 
-```htm
+Here's how you can modify the previous example to achieve this behavior:
+
+```html
 <head>
   <style>
     .menu-item {
@@ -84,3 +92,9 @@ JavaScript.
   clicked. While the above code works, there are ways to optimize it. Consider
   using event delegation or modern JavaScript features like `forEach` to improve
   performance and readability.
+
+## Conclusion
+
+Understanding how to work with **classes** in JavaScript is crucial for creating
+**interactive** and **dynamic** web pages. By combining CSS and JavaScript, you
+can enhance user experiences and create more **engaging interfaces**.

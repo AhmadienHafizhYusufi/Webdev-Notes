@@ -1,6 +1,15 @@
+# Creating, Traversing and Removing Nodes
+
+**In this lesson, you'll learn about** creating, traversing, and removing
+**nodes** in the DOM using JavaScript. These operations are fundamental for
+dynamically manipulating web pages.
+
 ## Creating Nodes
 
-For this commonly use method `document.createElement("element")`.
+JavaScript provides several ways to **create** HTML elements **dynamically**.
+The most commonly used method is `document.createElement`.
+
+## Creating Elements
 
 ```javascript
 document.createElement("tagname"); // tagname can be any valid HTML tag
@@ -9,6 +18,8 @@ document.createElement("tagname"); // tagname can be any valid HTML tag
 This method `creates` a new HTML element **but does not add** it to the DOM. You
 can set attributes and content using element properties and methods. To **add
 the element** to the DOM, use the `appendChild` method.
+
+**Example:**
 
 ```javascript
 const newElement = document.createElement("div");
@@ -22,7 +33,9 @@ Sometimes, you may not know the **exact element** you want to **manipulate**,
 but you know its **relationship** to other elements. JavaScript provides methods
 to **traverse** the DOM tree.
 
-```htm
+**Example:**
+
+```html
 <ul class="subjects">
   <li>Maths</li>
   <li class="fav-subject">Science</li>
@@ -54,5 +67,13 @@ to **traverse** the DOM tree.
 
 ## Removing Nodes
 
-The `remove` method **only** removes the element from the DOM, but it
-**remains** in memory and can be **re-added** if needed.
+Removing elements from the DOM is another common task. For example, you might
+want to **remove** a login link once a user has logged in.
+
+**Example:**
+
+```javascript
+const favSub = document.querySelector(".fav-subject");
+favSub.remove(); // Removes element from DOM
+```
+Understanding how to **create, traverse, and remove** nodes is essential for building **dynamic and interactive** web applications. These operations allow you to modify the structure and content of web pages in response to user actions or other events.
