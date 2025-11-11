@@ -1,13 +1,20 @@
-## `this` Keyword
+# "this” Keyword
+
+**In this lesson, you'll learn about** the `this` keyword in JavaScript, which
+is a fundamental concept for understanding how **functions** and **objects**
+interact in different **contexts**.
+
+## Introduction
 
 The `this` keyword in JavaScript refers to the **object** that is executing the
-**current function**
+**current function**. It provides a way to access the **properties** and
+**methods** of the object within which the function is being executed.
+Understanding `this` is crucial for working with object-oriented programming in
+JavaScript.
 
-It provides a way to access the **properties** and **methods** of the object
-within which the function is being executed. Understanding `this` is crucial for
-working with object-oriented programming in JavaScript.
+## Using it in a Function
 
-### Using it in a Function
+Let's explore how `this` works with a simple example:
 
 ```javascript
 function Sentence(words) {
@@ -17,6 +24,8 @@ function Sentence(words) {
 
 const S = new Sentence("hello there, we are learning about the `this` keyword");
 ```
+
+### Explanation
 
 1. **Function Definition**: We define a function `Sentence` that takes an input
    parameter `words`.
@@ -49,3 +58,7 @@ const S = new Sentence("hello there, we are learning about the `this` keyword");
   `undefined` in strict mode).
 - **Method Context**: When a function is called as a method of an object, `this`
   refers to the object the method is called on.
+
+Understanding the `this` keyword is essential for working with **objects** and
+**functions** in JavaScript, as it allows you to `access` and `manipulate` the
+properties of the object within which a function is executed.
