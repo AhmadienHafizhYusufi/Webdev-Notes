@@ -1,12 +1,27 @@
+# Promises
+
+**In this lesson, you'll learn about promises** in JavaScript, which provide a
+more readable and manageable way to handle **asynchronous operations** compared
+to **callback functions**. Promises help you avoid "**callback hell**" and make
+it easier to handle both successful and failed asynchronous operations.
+
 ## Promises
 
-Promises are **objects** that represent the eventual **completion** (or
-**failure**) of an asynchronous operation and its resulting value. Promises can
-either return the successfully fetched data or an **error**.
+In the last lecture, we witnessed the challenges of callback hell. Promises come
+to the rescue by offering a **cleaner** and more **structured** way to handle
+asynchronous tasks.
 
-### Creating a Promise
+## What are promises?
 
-```js
+They are **objects** that represent the eventual **completion** (or **failure**)
+of an asynchronous operation and its resulting value. Promises can either return
+the successfully fetched data or an **error**.
+
+## Creating a Promise
+
+Let's create a simple promise:
+
+```javascript
 // Creating the promise
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -23,13 +38,13 @@ promise.then((user) => {
 
 - A promise is created using the `Promise` constructor, which takes a function
   with `resolve` and `reject` parameters.
-- Inside the promise, you perform you **asynchronous operation**. If successful,
-  call `resolve` with the result.
+- Inside the promise, you perform your **asynchronous operation**. If
+  successful, call `resolve` with the result.
 - Use `.then()` to handle the resolved value of the promise.
 
-### Handling Errors with Promises
+## Handling Errors with Promises
 
-Promises also make it easy to handle **errors**. You can replace `resolve` with
+Promises also make it easy to handle errors. You can replace `resolve` with
 `reject` to simulate an error:
 
 ```javascript
@@ -53,11 +68,13 @@ promise
   });
 ```
 
-- Use `.catch()` to handle **errors** when the promise is rejected.
+- Use `.catch()` to handle errors when the promise is rejected.
 
-### Refactoring Callback Hell with Promises
+## Refactoring Callback Hell with Promises
 
-```js
+Let's refactor the previous callback example using **promises**:
+
+```javascript
 console.log(1);
 
 const fetchUser = (username) => {
@@ -110,3 +127,7 @@ console.log(2);
 - They allow you to **chain operations** and **handle errors** gracefully.
 - Promises help avoid **callback hell**, making your code easier to
   **maintain**.
+
+In the next lesson, you'll learn about `async/await`, a recent addition to
+JavaScript that builds on promises to make asynchronous code even more
+**intuitive**.
