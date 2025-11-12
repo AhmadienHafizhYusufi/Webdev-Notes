@@ -1,4 +1,11 @@
-## Import and Exports
+# Imports & Exports
+
+**In this lesson, you'll learn about imports** and **exports** in JavaScript,
+which are essential for organizing and managing code, especially in larger
+applications like those built with **React**. These features allow you to split
+your code into **modules**, making it more **maintainable** and **reusable**.
+
+## Understanding Imports and Exports
 
 JavaScripts **modules** allow you to break up your code into separate files,
 each responsible for a specific piece of functionality. This modular approach is
@@ -15,6 +22,8 @@ that they can be used in other files. There are to main types of exports:
 
 Named exports allow you to export multiple items from a module. Each item must
 be explicitly exported.
+
+**Example `dogs.js`**
 
 ```javascript
 const dogs = ["Bear", "Fluffy", "Doggo"];
@@ -65,3 +74,13 @@ When importing a default export, you can choose any name for the imported item.
 import onlyOneThing from "./test.js";
 console.log(onlyOneThing); // 'test'
 ```
+
+## Conclusion
+
+Understanding `imports` and `exports` is crucial for managing code in modern
+JavaScript applications. By using **modules**, you can keep your code
+**organized, maintainable, and reusable**. This modular approach is especially
+beneficial in frameworks like **React**, where components and utilities are
+often separated into different files. As you continue to build more complex
+applications, mastering imports and exports will become an essential part of
+your development toolkit.

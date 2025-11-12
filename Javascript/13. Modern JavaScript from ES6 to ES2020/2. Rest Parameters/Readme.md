@@ -1,10 +1,14 @@
-## Rest Parameters
+# Rest Parameters
+
+**In this lesson, you'll learn about** rest parameters in JavaScript, a feature introduced in ES6 that allows functions to accept an indefinite number of arguments as an array. This feature simplifies the handling of variadic functions, making your code cleaner and more flexible.
+
+## Understanding Rest Parameters
 
 Rest parameters enable you to represent an **indefinite number of arguments** as
 an **array**. This is particularly useful when you want to work with functions
 that can take a **variable number of arguments**.
 
-### Syntax and Usage
+## Syntax and Usage
 
 The rest parameter **syntax** uses **three dots** `...` followed by a name,
 which collects all remaining arguments into an array.
